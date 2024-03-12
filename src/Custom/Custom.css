@@ -1,0 +1,44 @@
+/* FOLLOWED CHANNELS */
+.channel-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 4%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.channel-list img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin: auto 0 auto 0;
+}
+
+.channel-list-inside {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: small;
+}
+
+
+
+
+
+.live-dot {
+    background-color: red;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    margin: auto auto auto 0;
+}
+
+/* Live count and live dot box */
+
+.channel-list-2 {
+    display: flex;
+    width: 18%;
+    justify-content: right;
+    font-weight: lighter;
+}

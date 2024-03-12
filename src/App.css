@@ -1,0 +1,78 @@
+.App {
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.main {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.icon {
+  width: 25px;
+  cursor: pointer;
+  height: 25px;
+}
+
+
+
+.title {
+  font-size: large;
+  /* font-weight: 700; */
+}
+
+summery {
+  font-weight: 200;
+  font-size: small;
+}
+
+
+/* show more button */
+
+small {
+  color: rgba(185, 6, 185, 0.799) !important;
+  margin-top: 5%;
+  padding: 1%;
+
+  cursor: pointer !important;
+  display: flex;
+  margin: 2% auto 0 auto;
+  width: fit-content;
+}
+
+
+/*tags */
+
+.tags {
+  width: 75%;
+  display: flex;
+  gap: 4%;
+  margin: auto;
+}
+
+.tags-list {
+  /* background-color: rgba(174, 174, 174, 0.751); */
+  width: fit-content;
+  padding: 0 1% 0 1%;
+  font-size: smaller;
+  font-weight: 600;
+  color: grey;
+}
+
+.text {
+  white-space: nowrap;
+  /* overflow: hidden; */
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+
+  .hidden {
+    display: block;
+  }
+}

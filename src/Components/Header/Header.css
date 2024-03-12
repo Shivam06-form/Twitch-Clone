@@ -1,0 +1,167 @@
+.header {
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    margin: auto 0 auto 0;
+    border-width: 1px;
+    border-bottom-style: groove;
+    padding: 1%;
+    box-shadow: 1px 1px 2px rgba(156, 151, 151, 0.874);
+    position: sticky;
+    top: 0.1px;
+    background-color: white;
+    z-index: 1000;
+}
+
+.icon-hidden {
+    display: none;
+}
+
+.header-icon {
+    width: fit-content;
+    height: 50%;
+    cursor: pointer;
+}
+
+
+.list-1,
+.list-2 {
+    display: flex;
+    width: 25%;
+}
+
+/* list-1 */
+
+.list-1 {
+
+    justify-content: space-between;
+    align-items: center
+}
+
+.list-1 img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.list-1 div {
+    cursor: pointer;
+}
+
+/* list-2 */
+
+.list-2 {
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.list-2 :nth-child(4) {
+    display: flex;
+    width: 33%;
+    height: 100%;
+    align-items: center;
+    gap: 5%;
+    font-size: small;
+    cursor: pointer;
+}
+
+.list-2 img {
+    width: 26px;
+    /* height: 100%; */
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.list-2-icon {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+/* Search-bar */
+
+.header-search {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+}
+
+.header-search input {
+    width: 90%;
+    height: 29px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid black
+}
+
+.header-search input:hover {
+    border: 5px solid purple
+}
+
+.header-search :nth-child(2) {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 25px;
+    width: 25px
+}
+
+@media (max-width: 1200px) {
+    .list-2 :nth-child(4) div {
+        display: none;
+    }
+
+
+
+    .list-1,
+    .list-2 {
+        width: 30%;
+    }
+
+    .list-2 :nth-child(4) {
+        width: fit-content;
+    }
+
+
+
+}
+
+@media (max-width: 800px) {
+    .header {
+        width: 98%;
+    }
+
+    .header-icon,
+    .list-2-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header-search input {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .header-search {
+        width: fit-content;
+    }
+
+    .icon-hidden {
+        display: none;
+    }
+
+    .list-1 div {
+        display: none;
+    }
+
+    .list-1 {
+        width: auto;
+    }
+
+    .list-2 {
+        width: 70%;
+    }
+}

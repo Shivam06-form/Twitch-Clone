@@ -1,0 +1,46 @@
+
+
+
+/* live-stream Info */
+
+
+.live-stream-2 {
+    display: flex;
+    gap: 4%;
+    position: relative;
+
+}
+
+
+
+.live-stream-2 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-top: 1.5%;
+}
+
+
+
+.views-count {
+    background-color: rgba(41, 40, 40, 0.429);
+    color: white;
+    position: absolute;
+    top: -80%;
+    border-style: groove;
+    border-color: black;
+    padding: 0 4% 0 4%;
+    width: fit-content;
+    border-radius: 10%;
+}
+
+.live-button {
+    background-color: red;
+    color: azure;
+    position: absolute;
+    padding: 0 1% 0 1%;
+    top: 5%;
+    width: fit-content;
+    left: 3%;
+
+}

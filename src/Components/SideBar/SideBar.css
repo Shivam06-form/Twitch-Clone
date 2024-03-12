@@ -1,0 +1,81 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    width: 26%;
+    overflow-y: scroll;
+    height: 100vh;
+    transition: all 300ms ease-out;
+}
+
+/* Animated-Sidedrawer */
+.animated-sidedrawer {
+    /* display: block; */
+    width: 0;
+    opacity: 0;
+    transition: all 300ms ease-in;
+}
+
+
+/* Drawer in small screen or when drawer is closed */
+
+.small-sidedrawer {
+    /* background-color: aqua; */
+    width: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    align-items: center;
+    /* justify-content: center; */
+    box-shadow: 2px 2px 2px rgba(139, 126, 126, 0.763);
+}
+
+
+/* Scrollbar */
+
+.sidebar::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 10px;
+}
+
+
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 100px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+.side-first {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .small-sidedrawer {
+        width: 6%
+    }
+
+    .sidebar,
+    .animated-sidedrawer {
+        display: none;
+    }
+}
